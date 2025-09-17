@@ -76,3 +76,32 @@ class_roster.remove("Zoie")
 class_roster.pop() # removes last item in list
 
 print(13 in lottery_nums) 
+
+# *** TUPLES ***
+# ordered + immutable 
+# useful for "snapshot" of a row of data
+student = ('Jackson', 17, 'Honors Comp Sci', 4.0)
+print(student)
+
+# *** SETS ***
+# unsorted, stores other immutable types
+# no duplicates allowed
+songs = {'Stranger', '3005', '7', '3', 'Mutt', 'Freeze', '3005'}
+print(songs)
+
+colors = ['blue', 'pink' , 'purple' , 'blue', 'pink']
+print(set(colors))
+
+songs.add('Gypsy')
+songs.add('Stranger')
+print(songs)
+# look up set OPERATIONS to compare items between sets
+
+# *** DICTIONARIES ***
+# mutable, but the KEYS can only be immutable types
+# {key: value} pairs. Keys must be unique
+# unordered (no index,can't sort in place)
+charecters = {'Aelin': 'assassin queen', 'Karate Kid': 'pupil', 'Mr. Miyagi': 'sensei', 'Phil Dunphy': 'Dad', 'Wall-E': 'Trash Robot', 'Princhess Peach': 'damsel in distress', 'Dexter': 'Serial Killer' , 'Lara Jean': 'letter writer'}
+print(len(charecters))
+#dictionary with numerical keys, list values
+grade_requirements = {9:['Bio'], 10:['Chem'], 11:['Physics'], 12:['Math', 'English', 'PE']}
